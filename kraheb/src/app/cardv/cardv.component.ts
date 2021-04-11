@@ -9,6 +9,9 @@ export class CardvComponent implements OnInit {
   carname="kia"
   prix="50dt"
   myimg="../img/c1.png"
+  clim="oui"
+  place="5"
+  porte="5"
   test="C:\Users\nejib\Dropbox\My PC (LAPTOP-PT4D1F2V)\Desktop\mini projet web\c1.png"
   constructor() { }
 

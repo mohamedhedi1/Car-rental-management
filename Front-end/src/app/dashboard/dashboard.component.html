@@ -1,0 +1,23 @@
+
+  <table class="table col-xl-12 col-lg-12 col-sm-4 col-md-4 " >
+    <thead>
+      <tr>
+        <th scope="col">MATRICULE</th>
+        <th scope="col">CIN</th>
+        <th scope="col">DATE_debut</th>
+        <th scope="col">DATE_fin</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let fruit of location">
+      <tr>
+        <td>{{fruit.matricule_v}}</td>
+        <td>{{fruit.cin_c}}</td>
+        <td>{{fruit.date_debut}}</td>
+        <td>{{fruit.date_fin}}</td>
+        <td><button type="submit" class="btn btn-info"(click)="Supprimeres(fruit.id_location)">supprime</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+

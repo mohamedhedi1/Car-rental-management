@@ -1,0 +1,20 @@
+
+<div class="row">
+  <div class="form-group offset-3">
+    <label for="delmat">Matricule</label>
+    <select class="form-control" name="delmat" id="delmat" [(ngModel)]="matsel">
+     
+      <option *ngFor="let fruit of mat" [value]="fruit.matricule"><h1>{{fruit.matricule}}</h1></option>
+
+    </select>
+    
+    <br>
+    <button  class="btn-outline-primary" (click)="supprime()" >suprimee</button>
+  </div>
+
+</div>
+
+
+ 
+
+

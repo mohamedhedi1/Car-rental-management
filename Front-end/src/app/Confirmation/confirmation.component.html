@@ -1,0 +1,77 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+
+<body>
+  <ng-template [ngIf]="test">
+  <div class="container">
+
+    <div class="row">
+
+
+      <div class="jumbotron text-center offset-2">
+        <h1 class="display-3"></h1>
+        <h6>Merci d'avoir Choisir Notre Site Kraheb . Nous vous contacter pour </h6>
+        <h1>Confirmer et Recupper votre voiture</h1> 
+            <h1> Mr (s) {{nom}}  {{pre}} </h1>
+         <hr>
+          <img src={{url}} class="card-img-top">
+          
+         
+      
+          <a href="">Contact us</a>
+          <div class="pl-4"> <a href="tel:+21625978915" class="text-dark"> +216 25978915 </a> / <a href="tel:+21672260040" class="text-dark "> +216 72 26 00 40 </a> /  <a href="tel:+21672310773" class="text-dark"> +216 72 310 773 </a></div>
+          <div class="pl-4"> 
+         
+            <a href="mailto:Kraheb@gmail.com" class="text-dark ">Kraheb@gmail.com</a>
+                </div>
+      </div>
+    </div>
+  </div>
+  <br>
+ 
+ 
+</ng-template>
+  <ng-template [ngIf]="!test">
+    <div class="container text-center my-5">    
+      <h1 class="text-primary"><img src="https://img.icons8.com/cute-clipart/100/000000/bug.png"/> 404</h1>
+      <h1 class="text-primary">Page not found</h1>
+      <h5>We are sorry, the page you requested could not be found.Please go back or contact us at <a href="mailto:Kraheb@gmail.com">Kraheb@gmail.com</a></h5>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </ng-template>
+
+  
+</body>
+<br>
+  <br>
+  <br>
+
+<footer>
+  <div class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/img/logo.png" alt="" width="123" height="125" class="d-inline-block align-text-top">
+        </div>
+        <div class="col-md-9">
+          <p></p>
+          <p>
+            L'agence Kraheb&nbsp;loue des voitures sur plusieurs villes tunisiennes . Réservation simple et rapide, un
+            devis immédiat et surtout pas de publicité mensongère confirmation au bout de cinq minutes, une voiture
+            sera
+            à votre disposition en arrivant à l'aéroport en Tunisie.</p>
+          <p></p>
+          <p>©2021 Kraheb S.A.R.L Tous droits réservés.
+            <span class="float-md-right"> Powered by <a href="http://www.booster-bc.com/" target="_blank"
+                class="text-white font-weight-500" title="Booster BC : Solutions E-Tourisme">Booster BC</a> </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

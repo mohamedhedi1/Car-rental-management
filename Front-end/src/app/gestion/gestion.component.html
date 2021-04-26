@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<br>
+<div class="login-card container">
+  
+    <h1 class="text-primary" style="font-family:Qualy">KRAHEB<img src="assets/img/logo.png" alt="" width="25" height="25" class="d-inline-block align-text-top"></h1><br>
+  <form>
+    <label for="username" class="text-primary" style="font-family:finance"><h4>Nom d'utilisateur</h4></label><br>
+    <input type="text" name="username" id="username" [(ngModel)]="userlog.username" ><br>
+    <label for="password" class="text-primary" style="font-family:finance"><h4>Mot de passe</h4></label><br>
+    <input type="password" name="password" id="password" [(ngModel)]="userlog.password">
+    <input type="submit" name="login" class="btn btn-primary" value="Se connecter" style="font-family:finance" (click)="connection()">
+  </form>
+    
+</div>
+<footer>
+
+  <div class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/img/logo.png" alt="" width="123" height="125" class="d-inline-block align-text-top">
+        </div>
+        <div class="col-md-9">
+           <p></p><p>
+    L'agence Kraheb&nbsp;loue des voitures sur plusieurs villes tunisiennes . Réservation simple et rapide, un devis immédiat et surtout pas de publicité mensongère confirmation au bout de cinq minutes, une voiture sera à votre disposition en arrivant à l'aéroport en Tunisie.</p><p></p>
+           <p>©2021 Kraheb S.A.R.L Tous droits réservés.  
+            <span class="float-md-right"> Powered by <a href="http://www.booster-bc.com/" target="_blank" class="text-white font-weight-500" title="Booster BC : Solutions E-Tourisme">Booster BC</a> </span>
+          </p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</footer>

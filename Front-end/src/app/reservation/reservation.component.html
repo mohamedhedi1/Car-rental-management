@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+
+<div class="bgc">
+<form ngNativeValidate class="form-horizontal" (ngSubmit)="addres() ">
+  <div class="container bgc">
+
+    <p class="text-primary text-cente " style="font-family:Qualy">DETAILS DE LOCATION</p>
+    <div class="finance form-group" style="font-family:finance">voiture<select class="form-select form-select-lg mb-3"
+        aria-label=".form-select-lg example" name="mat" [(ngModel)]="client.mat" required >
+        <option *ngFor="let fruit of matricul" [value]="fruit.matricule">
+          <h1>{{fruit.modele}} {{fruit.marque}}</h1>
+        </option>
+      </select></div>
+    
+      <div class="form-group" style="font-family:finance">date de prise <input type="date"[(ngModel)]="client.debuit" name="debuit" id="debuit" min={{x}} required ></div>
+      <div class="form-group" style="font-family:finance">date de prise <input type="date"[(ngModel)]="client.fin"  name="fin "id="fin" min={{x}} required></div>
+      <br>
+      <p class="text-primary text-center cen" style="font-family:Qualy">INFORMATION DU CONDUCTEUR</p>
+      <div class="form-group" style="font-family:finance">CIN <input type="text" id="cin" name="cin" [(ngModel)]="client.cin" class="form-text " required pattern="[0-9]{8}"></div>
+      <div class="form-group" style="font-family:finance">NOM <input type="text" id="nom" name="nom" [(ngModel)]="client.nom"class="form-text "  required></div>
+      <div class="form-group" style="font-family:finance">PRENOM <input type="text" id="prenom" name="prenom" [(ngModel)]="client.prenom"class="form-text "  required></div>
+      <div class="form-group" style="font-family:finance">DATE DE NAISSANCE <input type="date" name="dn"[(ngModel)]="client.dn" id="dn " required></div>
+      <div class="form-group" style="font-family:finance">EMAIL <input type="email" id="email" name="email" [(ngModel)]="client.email" class="form-text " required></div>
+      <div class="form-group" style="font-family:finance">TELEPHONE <input type="tel" id="tel" name="tel"[(ngModel)]="client.tel" class="form-text " placeholder="tel max length 8" required pattern="[0-9]{8}"></div>
+      <div class="form-group" style="font-family:finance">ADRESSE <input type="TEXT" id="adr" name="adresse"[(ngModel)]="client.adresse" class="form-text " required></div>
+      <br>
+      <div  class="form-group" style="font-family:finance">
+      <label for="pai">Paiement à l'agence</label>
+      <input type="radio" id="pai" checked required>Paiement à l'agence
+      </div>
+      <div class="text-center">
+        <input type="submit" name="login" class="btn btn-primary rounded-pill" value="RESERVER"
+          style="font-family:finance" >
+    
+  </div>
+</div>
+</form>
+<footer>
+
+  <div class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/img/logo.png" alt="" width="123" height="125" class="d-inline-block align-text-top">
+        </div>
+        <div class="col-md-9">
+           <p></p><p>
+    L'agence Kraheb&nbsp;loue des voitures sur plusieurs villes tunisiennes . Réservation simple et rapide, un devis immédiat et surtout pas de publicité mensongère confirmation au bout de cinq minutes, une voiture sera à votre disposition en arrivant à l'aéroport en Tunisie.</p><p></p>
+           <p>©2021 Kraheb S.A.R.L Tous droits réservés.  
+            <span class="float-md-right"> Powered by <a href="http://www.booster-bc.com/" target="_blank" class="text-white font-weight-500" title="Booster BC : Solutions E-Tourisme">Booster BC</a> </span>
+          </p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</footer>

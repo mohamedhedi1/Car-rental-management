@@ -1,0 +1,125 @@
+<app-navbar></app-navbar>
+<app-car></app-car>
+<br>
+<br>
+<div class="bgi">
+  <p class="text-primary text-center" style="font-family:LEMON MILK">Découvrez nos voitures</p>
+  <br>
+
+
+</div>
+<div class="container">
+
+  <div class="row ">
+
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xl-4" *ngFor="let hhh of threes ">
+      <div class=" card shadow" style="width: 18rem;">
+        <img src={{hhh.imagev}} class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title text-center" style="font-family:LEMON MILK">{{hhh.modele}}</h5>
+          <p class="card-text text-center" style="font-family:'Segoe UI'">A partire de {{hhh.prix}} /jour</p>
+          <div class="row mx-auto">
+            <div class="col">
+              <h5 class="text-primary"><img src="./assets/img/per.png"
+                  style="height: 30px;width: 30px;">{{hhh.nb_place}}</h5>
+            </div>
+            <div class="col">
+              <h5 class="text-primary"><img src="./assets/img/car.png"
+                  style="height: 40px;width: 40px;">{{hhh.nb_porte}}</h5>
+            </div>
+            <div class="col">
+              <h5 class="text-primary" *ngIf="hhh.climatisation"><img src="./assets/img/clim.png"
+                  style="height: 35px;width: 35px;">
+                <p>oui</p>
+              </h5>
+              <h5 class="text-primary" *ngIf="!hhh.climatisation"><img src="./assets/img/clim.png"
+                  style="height: 35px;width: 35px;">
+                <p>non</p>
+              </h5>
+            </div>
+          </div>
+          <div class="mx-auto" style="width: 100px;"><a routerLink="/reservation"
+              class="btn btn-light text-primary rounded-pill shadow " style="font-family:Qualy;">RESERVER</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<div class="mx-auto" style="width: 200px;"><a routerLink="/voiture" id="b1" class="btn btn-primary rounded-pill "
+    style="font-family:Qualy">VOIR PLUS</a>
+</div>
+<br>
+
+<br>
+<p class="text-primary text-center" style="font-family:LEMON MILK">ABOUT US</p><br>
+<div class="container overflow-hidden">
+  <div class="row gx-5">
+    <div class="col">
+      <div class="p-4  bg-light text-primary" style="height:500px"><ul class="links p-3 list-unstyled   mb-md-0 ">
+        <li class="mb-2">
+          <h4> <i class="fas fa-map-marker-alt pr-2 text-warning"></i> Adresse Borj Cedria</h4>
+          <div class="pl-4"> L'agence  Kraheb , Cote Istic Borj Cedria.
+          </div>
+        </li>
+        <li class="mb-2">
+          <h4><i class="fas fa-envelope-open-text pr-2 text-warning"></i> Email</h4>
+          <div class="pl-4"> 
+         
+        <a href="mailto:Kraheb@gmail.com" class="text-dark ">Kraheb@gmail.com</a>
+            </div>
+        </li>
+        <li class="mb-2">
+          <h4><i class="fa fa-phone-alt pr-2 text-warning"></i> Contact </h4>
+          <div class="pl-4"> <a href="tel:+21625978915" class="text-dark"> +216 25978915 </a> / <a href="tel:+21672260040" class="text-dark "> +216 72 26 00 40 </a> /  <a href="tel:+21672310773" class="text-dark"> +216 72 310 773 </a></div>
+        </li>
+      </ul></div>
+    </div>
+    <div class="col">
+      <div class="p-4 rounded bg-light"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1599.29421118606!2d10.429275!3d36.708427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa57cc71a0c8ce0a1!2sISTIC!5e0!3m2!1sfr!2sus!4v1617227094125!5m2!1sfr!2sus"
+          width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
+  </div>
+  <br>
+<br>
+<br>
+<br>
+</div>
+
+<footer>
+
+  <div class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/img/logo.png" alt="" width="123" height="125" class="d-inline-block align-text-top">
+        </div>
+        <div class="col-md-9">
+           <p></p><p>
+            L'agence Kraheb&nbsp;loue des voitures sur plusieurs villes tunisiennes . Réservation simple et rapide, un devis immédiat et surtout pas de publicité mensongère confirmation au bout de cinq minutes, une voiture sera à votre disposition en arrivant à l'aéroport en Tunisie.</p><p></p>
+           <p>©2021 Kraheb S.A.R.L Tous droits réservés.  
+            <span class="float-md-right"> Powered by <a href="http://www.booster-bc.com/" target="_blank" class="text-white font-weight-500" title="Booster BC : Solutions E-Tourisme">Booster BC</a> </span>
+          </p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,16 @@
+p{
+    top:50%;
+    height: 100px;
+text-shadow: rgb(0, 0, 0) 1px 0 5px;
+
+}
+#a{
+    height: 150px;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+button {width: 180px;
+    height: 40px;
+}

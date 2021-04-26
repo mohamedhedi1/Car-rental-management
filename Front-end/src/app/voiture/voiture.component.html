@@ -1,0 +1,62 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container">
+  <app-filter></app-filter>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xl-4" *ngFor="let carname of voitu1">
+      <div class=" card shadow" style="width: 18rem;">
+        <img src={{carname.imagev}} class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title text-center" style="font-family:LEMON MILK">{{carname.modele}}</h5>
+          <p class="card-text text-center" style="font-family:'Segoe UI'">A partire de {{carname.prix}} /jour</p>
+          <div class="row mx-auto">
+            <div class="col">
+              <h5 class="text-primary"><img src="./assets/img/per.png"
+                  style="height: 30px;width: 30px;">{{carname.nb_place}}</h5>
+            </div>
+            <div class="col">
+              <h5 class="text-primary"><img src="./assets/img/car.png"
+                  style="height: 40px;width: 40px;">{{carname.nb_porte}}</h5>
+            </div>
+            <div class="col">
+              <h5 class="text-primary" *ngIf="carname.climatisation"><img src="./assets/img/clim.png"
+                  style="height: 35px;width: 35px;">
+                <p>oui</p>
+              </h5>
+              <h5 class="text-primary" *ngIf="!carname.climatisation"><img src="./assets/img/clim.png"
+                  style="height: 35px;width: 35px;">
+                <p>non</p>
+              </h5>
+            </div>
+          </div>
+          <div class="mx-auto" style="width: 100px;"><a routerLink="/reservation"
+              class="btn btn-light text-primary rounded-pill shadow " style="font-family:Qualy;">RESERVER</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+
+  <div class="bg-dark text-white py-4" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/img/logo.png" alt="" width="123" height="125" class="d-inline-block align-text-top">
+        </div>
+        <div class="col-md-9">
+           <p></p><p>
+    L'agence Kraheb&nbsp;loue des voitures sur plusieurs villes tunisiennes . Réservation simple et rapide, un devis immédiat et surtout pas de publicité mensongère confirmation au bout de cinq minutes, une voiture sera à votre disposition en arrivant à l'aéroport en Tunisie.</p><p></p>
+           <p>©2021 Kraheb S.A.R.L Tous droits réservés.  
+            <span class="float-md-right"> Powered by <a href="http://www.booster-bc.com/" target="_blank" class="text-white font-weight-500" title="Booster BC : Solutions E-Tourisme">Booster BC</a> </span>
+          </p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</footer>

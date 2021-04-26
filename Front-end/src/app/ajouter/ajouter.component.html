@@ -1,0 +1,88 @@
+
+<form ngNativeValidate class="form-horizontal" (ngSubmit)="add() ">
+<div class="row">
+
+
+  <div class="form-group col-xl-4">
+    <label for="Matricule">Matricule</label>
+    <input type="text" class="form-control" name="Matricule" id="Matricule" pattern="[0-9]{3}[a-zA-z]{3}[0-9]{4}" valuer="" aria-describedby="helpId" placeholder="exemple 000tun0000" required>
+  </div>
+  <div class="form-group col-xl-4">
+    <label for="NBPORTE">NBPORTE</label>
+    <select class="form-control" name="NBPORTE" id="NBPORTE"[(ngModel)]="NBPORTE"required >
+      <option  >4</option>
+      <option >2</option>
+
+    </select>
+  </div>
+  <div class="form-group col-xl-4">
+    <label for="NBPLACE">NBPLACE</label>
+    <select class="form-control" name="NBPLACE" id="NBPLACE" [(ngModel)]="NBPLACE" required >
+      <option  >4</option>
+      <option>5</option>
+
+    </select>
+  </div>
+</div>
+<div class="row">
+
+
+  <div class="form-group col-xl-4">
+    <label for="MARQUE">MARQUE</label>
+    <input type="text" class="form-control" name="MARQUE" id="MARQUE" aria-describedby="helpId" placeholder="" required  pattern="[A-Za-z]{2,10}">
+  </div>
+  <div class="form-group col-xl-4">
+    <label for="Path">Path</label><br>
+    <input type="file" id="path"   
+    (change)="onSelectFile($event)" required >
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-xl-4">
+    <label for="MODEL">MODEL</label>
+    <input type="text" class="form-control" name="MODEL" id="MODEL" aria-describedby="helpId" placeholder=""  pattern="[A-Za-z]{2,10}" required>
+  </div>
+  <div class="col-xl-4">
+    <label for="BOITVITESSE">BOITVITESSE</label><br>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="BOITVITESSE" id="BOITVITESSE" value="1" > Auto
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="BOITVITESSE" id="BOITVITESSE" value="0" checked > Manuel
+      </label>
+    </div>
+  </div>
+ 
+</div>
+
+
+<div class="row">
+  <div class="form-group col-xl-4">
+    <label for="PRIX">PRIX</label>
+    <input type="text" class="form-control" name="PRIX" id="PRIX" aria-describedby="helpId" placeholder=""  required pattern="[0-9]{2,3}" >
+
+  </div>
+  <div class="col-xl-4">
+    <label for="	CLIMATISATION">CLIMATISATION</label><br>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="CLIMATISATION" id="CLIMATISATION" value="1"  checked> Oui
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="CLIMATISATION" id="CLIMATISATION" value="0"  > Non
+      </label>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class=" form-group offset-xl-6 ">
+   
+    <button type="submit" class="btn-outline-primary" >Ajout</button>
+  </div>
+</div>
+</form>

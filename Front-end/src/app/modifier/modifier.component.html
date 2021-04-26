@@ -1,0 +1,89 @@
+<form ngNativeValidate class="form-horizontal" (ngSubmit)="Modifier()">
+<div class="row">
+
+
+  <div class="form-group col-xl-4">
+    <label for="mat">Matricule</label>
+    <select class="form-control" name="mat" id="mat" [(ngModel)]="select" (ngModelChange)="selects($event)" required >
+      <option  *ngFor="let x of mats" [value]="x.matricule" >{{x.matricule}}</option>
+
+    </select>
+
+  </div>
+  <div class="form-group col-xl-4">
+    <label for="NBPORTE">NBPORTE</label>
+    <select class="form-control" name="NBPORTE" id="NBPORTE" [(ngModel)]="NBPORTE" >
+      <option>2</option>
+      <option>4</option>
+
+    </select>
+  </div>
+  <div class="form-group col-xl-4">
+    <label for="NBPLACE">NBPLACE</label>
+    <select class="form-control" name="NBPLACE" id="NBPLACE" [(ngModel)]="NBPLACE" >
+      <option>4</option>
+      <option>5</option>
+
+    </select>
+  </div>
+</div>
+<div class="row">
+
+
+  <div class="form-group col-xl-4">
+    <label for="MARQUE">MARQUE</label>
+    <input type="text" class="form-control" name="MARQUE" id="MARQUE" aria-describedby="helpId" >
+  </div>
+  <div class="form-group col-xl-4">
+    <label for="Path">Path</label><br>
+    <input type="file" id="Path" name="avatar" accept="image/png, image/jpeg" (change)="onSelectFile($event)" >
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-xl-4">
+    <label for="MODEL">MODEL</label>
+    <input type="text" class="form-control" name="MODEL" id="MODEL" aria-describedby="helpId" placeholder="">
+  </div>
+  <div class="col-xl-4">
+    <label for="BOITVITESSE">BOITVITESSE</label><br>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="BOITVITESSE" id="BOITVITESSE" value="Auto"> Auto
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="BOITVITESSE" id="BOITVITESSE" value="Manuel"> Manuel
+      </label>
+    </div>
+  </div>
+ 
+</div>
+
+
+<div class="row">
+  <div class="form-group col-xl-4">
+    <label for="PRIX">PRIX</label>
+    <input type="text" class="form-control" name="PRIX" id="PRIX" aria-describedby="helpId" placeholder="">
+
+  </div>
+  <div class="col-xl-4">
+    <label for="	CLIMATISATION">CLIMATISATION</label><br>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="CLIMATISATION" id="CLIMATISATION" value="oui"> Oui
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="CLIMATISATION" id="CLIMATISATION" value="Non"> Non
+      </label>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class=" form-group col-xl-8">
+    <button type="submit" class="btn-outline-primary  offset-xl-8 " >Modifier</button>
+  </div>
+</div>
+</form>
